@@ -23,27 +23,27 @@
     <div class="other-links">
       <button id="btn-login"><a href="./login/logins.html">Login</a></button>
       <button id="btn-signup"><a href="./login/signup.html">Sign up</a></button>
-
-      <i class="fa-solid fa-user" class="user"></i>
-      <i class="fa-solid fa-cart-shopping" class="shopping"></i>
+      <div class="icons">
+        <i class="fa-solid fa-user" class="user"></i>
+        <i class="fa-solid fa-cart-shopping" class="shopping"></i>
+      </div>
     </div>
   </div>
   <div class="home-section">
     <nav id="navbar">
       <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" width="180px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+      <button class="navbar-toggler" type="button">
+        <span><i class="fa-solid fa-bars" style="color: white;margin-top: 35px;" onclick="ee()"></i></span>
       </button>
       <ul>
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="clothe.html">clothe</a>
+          <a class="nav-link" href="#">clothe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">category<i class="fa fa-caret-down" aria-hidden="true" onclick="dd()"></i>
+          <a class="nav-link" href="#">category <i class="fa fa-caret-down" aria-hidden="true" onclick="dd()"></i>
           </a>
 
           <ul class="dropdown-menu">
@@ -54,12 +54,13 @@
             <li><a class="dropdown-item" href="#">Smart Watch</a></li>
             <li><a class="dropdown-item" href="#">Glasess</a></li>
           </ul>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
       <!-- <input type="text" placeholder="Search" class="inp"> -->
@@ -337,6 +338,10 @@
       var togg = document.querySelector(".dropdown-menu")
       togg.classList.toggle("pop").style.display = "block"
     }
+    // function ee() {
+    //   var toggg = document.querySelector(".home-section")
+    //   toggg.classList.toggle("pop").style.display = "block"
+    // }
   </script>
 </body>
 
