@@ -1,29 +1,27 @@
-
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    /* background-color: #f4f4f4; */
-    left: -15%;
-    position: relative;
-    
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #f4f4f4; */
+  left: -15%;
+  position: relative;
+
 }
-.form-box{
+
+.form-box {
   /* position: relative; */
   width: 500px;
   height: 500px;
   padding: 25px;
-  
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 9px;
@@ -31,39 +29,44 @@ section{
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  }
-  
+}
 
- .form-box .form-value .form{
+
+.form-box .form-value .form {
   display: flex;
   flex-wrap: wrap;
 }
-.login button{
-    padding: 4%;
-    width: 20vw;
-    background: none;
-border: 2px solid #ddd;
-border-radius: 17px;
-top: 20vw;
-left: -5%;
-position: relative;
+
+.login button {
+  padding: 4%;
+  width: 20vw;
+  background: none;
+  border: 2px solid #ddd;
+  border-radius: 17px;
+  top: 20vw;
+  left: -5%;
+  position: relative;
 }
-.login a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+
+.login a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
-.login h1{
+
+.login h1 {
   position: absolute;
   top: 13vw;
   left: 7vw;
 }
-.login h4{
+
+.login h4 {
   position: absolute;
   top: 16vw;
   left: 25%;
 }
-.login{
+
+.login {
   background-color: #1c1c50;
   padding-left: 5%;
   padding-right: 4%;
@@ -72,148 +75,157 @@ position: relative;
   border-radius: 6px;
   color: white;
   position: relative;
-justify-content: center;
-text-align: center;
-align-items: center;
-height: 90vh;
-width: 25vw;
-padding-bottom: 10%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 90vh;
+  width: 25vw;
+  padding-bottom: 10%;
 }
- form img{
-    width: 64%;
-    margin-left: 100px;
-    margin-bottom: 8px;
-    background-color: #1c1c50;
-  }
 
-  p{
-    text-align: center;
-  }
+form img {
+  width: 64%;
+  margin-left: 100px;
+  margin-bottom: 8px;
+  background-color: #1c1c50;
+}
 
-  h2{
-    font-size: 26px;
-    color: #1c1c50;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+p {
+  text-align: center;
+}
 
-  .inputbox{
-    position: relative;
-    width: 490px;
-    border-radius: 7px;
-    border: 2px solid black;
-  }
+h2 {
+  font-size: 26px;
+  color: #1c1c50;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  .inputbox label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    color: black;
-    font-size: 1em;
-    pointer-events: none;
-    transition: .5s;
-  }
+.inputbox {
+  position: relative;
+  width: 490px;
+  border-radius: 7px;
+  border: 2px solid black;
+}
 
-  input:focus ~ label,
-  input:valid ~ label{
-    top: -10px;
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
 
-  }
-  input:focus ~ label,
-  input::spelling-error {
-    top: -10px;
-    
-  }
-  input:focus ~ label,
-  input:required  ~ label{
-    top: -10px;
-    
-  }
-  .inputbox input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;   
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: black;
-  }
+input:focus~label,
+input:valid~label {
+  top: -10px;
 
-  .inputbox ion-icon{
-    position: absolute;
-    right: 8px;
-    color: black;
-    font-size: 1.2rem;
-    top: 20px;
-  }
+}
 
-  .log-in{
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    background: #ddd;
-    color: #1c1c50;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    /* padding-top: 10px; */
-  }
-.log-in:hover{
+input:focus~label,
+input::spelling-error {
+  top: -10px;
+
+}
+
+input:focus~label,
+input:required~label {
+  top: -10px;
+
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: black;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: black;
+  font-size: 1.2rem;
+  top: 20px;
+}
+
+.log-in {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background: #ddd;
+  color: #1c1c50;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  /* padding-top: 10px; */
+}
+
+.log-in:hover {
   background-color: #1c1c50;
   color: white;
 }
-  .trans{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ddd;
 
-    margin-top: 12px;
-    border-radius: 10px;
-    font-weight: 900;
-    background: #fff;
-    border: 1px solid #1c1c50;
-    cursor: pointer;
-    color: #1c1c50;
-  }
-  .trans:hover{
-    background-color: #1c1c50;
-    color: white;
-  }
-  .google{
-    color: rgba(68, 79, 183, 1);
-    font-size: 16px;
-    padding-right: 6px;
-  }
-
-
-.register{
- font-size: .9em;
- color: black;
- text-align: center;
- margin: 25px 0 10px; 
+.trans {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  margin-top: 12px;
+  border-radius: 10px;
+  font-weight: 900;
+  background: #fff;
+  border: 1px solid #1c1c50;
+  cursor: pointer;
+  color: #1c1c50;
 }
 
-.register p a{
-    text-decoration: none;
-    color:#1c1c50;
-    font-weight: 600;
-    margin-left: 5px;
+.trans:hover {
+  background-color: #1c1c50;
+  color: white;
 }
 
-.register p a:hover{
-    text-decoration: underline;
+.google {
+  color: rgba(68, 79, 183, 1);
+  font-size: 16px;
+  padding-right: 6px;
 }
-.logins{
+
+
+.register {
+  font-size: .9em;
+  color: black;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #1c1c50;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.logins {
   display: flex;
   gap: 13rem;
 }
-.login{
+
+.login {
   background-color: #1c1c50;
   padding-left: 5%;
   padding-right: 4%;
@@ -222,32 +234,97 @@ padding-bottom: 10%;
   border-radius: 6px;
   color: white;
   position: relative;
-justify-content: center;
-text-align: center;
-align-items: center;
-height: 70vh;
-width: 25vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 70vh;
+  width: 25vw;
 }
-.login h1{
+
+.login h1 {
   position: absolute;
   top: 13vw;
 }
-.login h4{
+
+.login h4 {
   position: absolute;
   top: 16vw;
   left: 25%;
 }
-.login button{
+
+.login button {
   padding: 4%;
   width: 20vw;
   background: none;
-border: 2px solid #ddd;
-border-radius: 17px;
-top: 20vw;
-right: 12%;
+  border: 2px solid #ddd;
+  border-radius: 17px;
+  top: 20vw;
+  right: 12%;
 }
-.login a{
+
+.login a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+@media (min-width:320px) and (max-width:425px) {
+  .logins {
+    flex-direction: column;
+  }
+
+  @media (min-width:320px) {
+    section {
+      width: fit-content;
+      left: 2%;
+    }
+
+    .form-box {
+      width: 330px;
+      padding-right: 2px;
+    }
+
+    .form-box .inputbox {
+      width: 330px;
+      left: -4%;
+    }
+
+    .log-in,
+    .sign-in {
+      left: -3%;
+      position: relative;
+    }
+
+    .upper img {
+      left: -10%;
+      position: relative;
+    }
+
+    .login {
+      width: 300px;
+      padding-right: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login h1 {
+      position: absolute;
+      top: 45vw;
+      left: 15vw;
+    }
+
+    .login h4 {
+      position: absolute;
+      top: 55vw;
+      left: 25vw;
+    }
+.logins{
+  gap: 0;
+}
+    .login button {
+      top: 65vw;
+      width: 80vw;
+      left: -2%;
+    }
+  }
 }
