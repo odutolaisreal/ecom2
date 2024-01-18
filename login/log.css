@@ -273,58 +273,137 @@ input:required~label {
     flex-direction: column;
   }
 
-  @media (min-width:320px) {
-    section {
-      width: fit-content;
-      left: 2%;
-    }
+  section {
+    width: fit-content;
+    left: 2%;
+  }
 
-    .form-box {
-      width: 330px;
-      padding-right: 2px;
-    }
+  .form-box {
+    width: 280px;
+    padding-right: 2px;
+  }
 
-    .form-box .inputbox {
-      width: 330px;
-      left: -4%;
-    }
+  .form-box .inputbox {
+    width: 280px;
+    left: -4%;
+  }
 
-    .log-in,
-    .sign-in {
-      left: -3%;
-      position: relative;
-    }
+  .log-in,
+  .sign-in {
+    left: -3%;
+    position: relative;
+  }
 
-    .upper img {
-      left: -10%;
-      position: relative;
-    }
+  .upper img {
+    left: -10%;
+    position: relative;
+  }
 
-    .login {
-      width: 300px;
-      padding-right: 10px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  .login {
+    width: 260px;
+    margin-right: 90px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .login h1 {
-      position: absolute;
-      top: 45vw;
-      left: 15vw;
-    }
+  .login h1 {
+    position: absolute;
+    top: 45vw;
+    left: 15vw;
+  }
 
-    .login h4 {
-      position: absolute;
-      top: 55vw;
-      left: 25vw;
-    }
-.logins{
-  gap: 0;
+  .login h4 {
+    position: absolute;
+    top: 55vw;
+    left: 25vw;
+  }
+
+  .logins {
+    gap: 0;
+  }
+
+  .login button {
+    top: 65vw;
+    width: 70vw;
+    left: -2%;
+  }
 }
-    .login button {
-      top: 65vw;
-      width: 80vw;
-      left: -2%;
-    }
+
+@media (max-width:320px) {
+  .login {
+    left: 5%;
+  }
+
+  .inputbox {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:375px) {
+  .inputbox {
+    margin-bottom: 20px;
+  }
+
+  .login {
+    left: 10%;
+  }
+
+  .form-box {
+    left: 8%;
+    position: relative;
+  }
+}
+
+@media (min-width:425px) {
+  .inputbox {
+    margin-bottom: 20px;
+  }
+
+  .login {
+    left: 7%;
+    width: 330px;
+  }
+
+  .login h1 {
+    left: 25%;
+  }
+
+  .login h4 {
+    left: 35%;
+  }
+
+  .form-box {
+    left: 8%;
+    width: 330px;
+    position: relative;
+  }
+
+  .form-box .inputbox {
+    width: 330px;
+    left: -4%;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .login {
+    margin: 0;
+    left: 3%;
+    width: 35vw;
+    position: absolute;
+    height: 94vh;
+    top: auto;
+  }
+
+  .logins {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-box {
+    left: 37%;
+  }
+  .login button{
+    width: 38vw;
   }
 }

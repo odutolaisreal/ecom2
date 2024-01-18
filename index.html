@@ -35,39 +35,39 @@
       <button class="navbar-toggler" type="button">
         <span><i class="fa-solid fa-bars" style="color: white;margin-top: 35px;" onclick="ee()"></i></span>
       </button>
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">clothe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">category <i class="fa fa-caret-down" aria-hidden="true" onclick="dd()"></i>
-          </a>
+        <ul class="uu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">clothe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">category <i class="fa fa-caret-down" aria-hidden="true" onclick="dd()"></i>
+            </a>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">T-Shirt</a></li>
-            <li><a class="dropdown-item" href="#">Hoodies</a></li>
-            <li><a class="dropdown-item" href="#">Pants</a></li>
-            <li><a class="dropdown-item" href="#">Soprts Shoes</a></li>
-            <li><a class="dropdown-item" href="#">Smart Watch</a></li>
-            <li><a class="dropdown-item" href="#">Glasess</a></li>
-          </ul>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+              <li><a class="dropdown-item" href="#">Hoodies</a></li>
+              <li><a class="dropdown-item" href="#">Pants</a></li>
+              <li><a class="dropdown-item" href="#">Soprts Shoes</a></li>
+              <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="#">Glasess</a></li>
+            </ul>
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <!-- <input type="text" placeholder="Search" class="inp"> -->
-      <form class="searches">
-        <input type="search" placeholder="Search" aria-label="Search" class="search1">
-        <button type="submit" class="search2">Search</button>
-      </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- <input type="text" placeholder="Search" class="inp"> -->
+        <form class="searches">
+          <input type="search" placeholder="Search" aria-label="Search" class="search1">
+          <button type="submit" class="search2">Search</button>
+        </form>
       <!-- </input> -->
     </nav>
   </div>
@@ -338,10 +338,10 @@
       var togg = document.querySelector(".dropdown-menu")
       togg.classList.toggle("pop").style.display = "block"
     }
-    // function ee() {
-    //   var toggg = document.querySelector(".home-section")
-    //   toggg.classList.toggle("pop").style.display = "block"
-    // }
+    function ee() {
+      var toggg = document.querySelector(".uu")
+      toggg.classList.toggle("pop").style.display = "block"
+    }
   </script>
 </body>
 
